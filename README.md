@@ -1,2 +1,0 @@
-# opersTracker
-Created with CodeSandbox

@@ -2,30 +2,44 @@ import React, { Fragment } from "react";
 import { Grid, Paper, Typography, List } from "material-ui";
 import { ListItem, ListItemText } from "material-ui/List";
 
-const styles = {
-  Paper: {
+const styles = theme => ({
+  // Paper: {
+  //   padding: 20,
+  //   marginTop: 10,
+  //   marginBottom: 10,
+  //   height: 600,
+  //   overflowY: "auto"
+  // },
+  paper: {
+    padding: theme.spacing(1),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+    whiteSpace: "nowrap",
+    marginBottom: theme.spacing(1)
+  },
+  Paper2: {
     padding: 20,
     marginTop: 10,
     marginBottom: 10,
     height: 600,
     overflowY: "auto"
   }
-};
+});
 
 export default ({
-  exercises,
+  areasBuildings,
   category,
   onSelect,
   exercise: {
     id,
     title = "Welcome!",
-    description = "Please select an exercise from the list on the left."
+    description = "Please select an area or building from the list on the left."
   }
 }) => (
   <Grid container>
-    <Grid item sm>
+    <Grid item xs={4}>
       <Paper style={styles.Paper}>
-        {exercises.map(([group, exercises]) =>
+        {areasBuildings.map(([group, areasBuildings]) =>
           !category || category === group ? (
             <Fragment key={group}>
               <Typography
@@ -35,7 +49,7 @@ export default ({
                 {group}
               </Typography>
               <List component="ul">
-                {exercises.map(({ id, title }) => (
+                {areasBuildings.map(({ id, title }) => (
                   <ListItem key={id} button onClick={() => onSelect(id)}>
                     <ListItemText primary={title} />
                   </ListItem>
@@ -46,8 +60,8 @@ export default ({
         )}
       </Paper>
     </Grid>
-    <Grid item sm>
-      <Paper style={styles.Paper}>
+    <Grid item xs={8}>
+      <Paper style={styles.Paper2}>
         <Typography variant="display1">{title}</Typography>
         <Typography variant="subheading" style={{ marginTop: 20 }}>
           {description}

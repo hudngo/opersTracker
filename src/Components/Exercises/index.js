@@ -3,20 +3,21 @@ import { Grid, Paper, Typography, List } from "material-ui";
 import { ListItem, ListItemText } from "material-ui/List";
 
 const styles = theme => ({
-  // Paper: {
-  //   padding: 20,
-  //   marginTop: 10,
-  //   marginBottom: 10,
-  //   height: 600,
-  //   overflowY: "auto"
-  // },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    whiteSpace: "nowrap",
-    marginBottom: theme.spacing(1)
+  Paper: {
+    padding: 20,
+    marginTop: 10,
+    marginBottom: 10,
+    height: 600,
+    overflowY: "auto"
   },
+  // paper: {
+  //   padding: theme.spacing(1),
+  //   textAlign: "center",
+  //   color: theme.palette.text.secondary,
+  //   whiteSpace: "nowrap",
+  //   marginBottom: theme.spacing(1)
+  //   height: 600;
+  // },
   Paper2: {
     padding: 20,
     marginTop: 10,
@@ -27,7 +28,7 @@ const styles = theme => ({
 });
 
 export default ({
-  areasBuildings,
+  exercises,
   category,
   onSelect,
   exercise: {
@@ -37,9 +38,9 @@ export default ({
   }
 }) => (
   <Grid container>
-    <Grid item xs={4}>
+    <Grid item sm>
       <Paper style={styles.Paper}>
-        {areasBuildings.map(([group, areasBuildings]) =>
+        {exercises.map(([group, exercises]) =>
           !category || category === group ? (
             <Fragment key={group}>
               <Typography
@@ -49,7 +50,7 @@ export default ({
                 {group}
               </Typography>
               <List component="ul">
-                {areasBuildings.map(({ id, title }) => (
+                {exercises.map(({ id, title }) => (
                   <ListItem key={id} button onClick={() => onSelect(id)}>
                     <ListItemText primary={title} />
                   </ListItem>
@@ -60,7 +61,7 @@ export default ({
         )}
       </Paper>
     </Grid>
-    <Grid item xs={8}>
+    <Grid item sm>
       <Paper style={styles.Paper2}>
         <Typography variant="display1">{title}</Typography>
         <Typography variant="subheading" style={{ marginTop: 20 }}>

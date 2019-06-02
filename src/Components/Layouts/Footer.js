@@ -16,8 +16,8 @@ export default ({ areasBuildings, category, onSelect }) => {
         value={index}
         onChange={onIndexSelect}
         indicatorColor="primary"
+        // color=""
         textColor="primary"
-        left
       >
         <Tab label="All" />
         {areasBuildings.map(group => (

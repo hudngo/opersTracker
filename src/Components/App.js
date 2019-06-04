@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Header, Footer } from "./Layouts";
 import Exercises from "./Exercises";
-import { areasBuildings, exercises } from "../store.js";
+import { areasBuildings, exercises, atheltics } from "../store.js";
 
 export default class extends Component {
   state = {
+    atheltics,
     exercises,
     exercise: {}
   };
@@ -35,6 +36,12 @@ export default class extends Component {
     }));
   };
 
+  handleAthelticsSelected = id => {
+    this.setState(({ atheltics }) => ({
+      atheltics: atheltics.find(ex => ex.id === id)
+    }));
+  };
+
   render() {
     const exercises = this.getExercisesByareasBuildings(),
       { category, exercise } = this.state;
@@ -49,6 +56,7 @@ export default class extends Component {
         />
 
         <Exercises
+          atheltics={atheltics}
           exercise={exercise}
           category={category}
           exercises={exercises}

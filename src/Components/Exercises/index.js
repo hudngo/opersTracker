@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Grid, Paper, Typography, List, Button } from "material-ui";
 import { ListItem, ListItemText } from "material-ui/List";
+import { typography } from "material-ui/styles";
 
 const styles = theme => ({
   Paper: {
@@ -40,6 +41,7 @@ const styles = theme => ({
 
 export default ({
   exercises,
+  atheltics,
   category,
   onSelect,
   exercise: {
@@ -90,7 +92,7 @@ export default ({
       </Paper>
       {/* </Grid> */}
     </Grid>
-    <Grid item sm>
+    <Grid item xs={8}>
       <Paper style={styles.Paper2}>
         <Typography variant="display1">{title}</Typography>
         <Typography variant="subheading" style={{ marginTop: 20 }}>
@@ -99,6 +101,43 @@ export default ({
           <Button target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScbvLtTiX53tSWpuVJhdyzwHbQuoX-J6n4Qiad2agzEZXUy_w/viewform">reserve room</Button>
         </Typography>
       </Paper>
+    </Grid>
+
+    <Grid item xs={4}>
+      <Paper>
+      {/* {atheltics.map(([group, atheltics]) =>
+            !category || category === group ? (
+              <Fragment key={group}>
+                <Typography
+                  variant="headline"
+                  style={{ textTransform: "capitalize" }}
+                >
+                  {group}
+                </Typography>
+                <List component="ul">
+                  {atheltics.map(({ id, name }) => (
+                    <ListItem key={id} button onClick={() => onSelect(id)}>
+                      <ListItemText primary={name} />
+                    </ListItem>
+                  ))}
+                </List>
+              </Fragment>
+            ) : null
+          )} */}
+      </Paper>
+
+    </Grid>
+    <Grid item xs={4}>
+      <Paper>
+        this is working
+      </Paper>
+
+    </Grid>
+    <Grid item xs={4}>
+      <Paper>
+        this is working
+      </Paper>
+
     </Grid>
   </Grid>
 );

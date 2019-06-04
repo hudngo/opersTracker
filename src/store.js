@@ -64,3 +64,17 @@ export const exercises = [
     areasBuildings: "multi-purpose room"
   }
 ];
+
+
+export const atheltics = [
+  {
+    id: 0,
+    name: "Multi-Purpose Room",
+    areasBuildings: "multi-purpose room"
+  },
+  {
+    id: 1,
+    name: "robin",
+    
+  }
+];

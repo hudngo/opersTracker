@@ -27,8 +27,9 @@ export const exercises = [
   {
     id: "swimming-pool",
     title: "Swimming Pool",
-    description: "Biceps exercise...",
-    areasBuildings: "sports areas"
+    description: "the current population is 30",
+    areasBuildings: "sports areas",
+    hours: "Monday-Friday 8:30am - 1:30pm, 3:30pm- 7:30pm"
   },
   {
     id: "tennis-courts",
@@ -51,8 +52,10 @@ export const exercises = [
   {
     id: "wellness-center",
     title: "Wellness Center",
-    description: "Back and leg exercise...",
-    areasBuildings: "wellness center"
+    description: "the current population is 80",
+    areasBuildings: "wellness center",
+    hours: "Monday-Friday 6:30am - 11pm"
+
   },
   {
     id: "multi-purpose-room",

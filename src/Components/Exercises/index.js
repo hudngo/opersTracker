@@ -83,10 +83,21 @@ export default ({
         >
           {description}
         </Typography>
+        <div style={{ padding: 10 }} />
         {/* </Paper> */}
         {/* </Grid>
       <Grid item sm> */}
-        <Grid item sm style={{ marginTop: -20, padding: 20 }}>
+        {/* <Paper style={{height: 600}}> */}
+        <Grid
+          item
+          sm
+          style={{
+            marginTop: -20,
+            padding: 20,
+            height: 300,
+            overflowY: "auto"
+          }}
+        >
           {/* <Paper style={styles.Paper2}> */}
           {exercises.map(([group, exercises]) =>
             !category || category === group ? (
@@ -108,11 +119,12 @@ export default ({
             ) : null
           )}
         </Grid>
+        {/* </Paper> */}
       </Paper>
       {/* </Grid> */}
     </Grid>
-    <Grid item sm={9}>
-      <Paper style={styles.Paper2}>
+    <Grid item sm={9} style={{ height: 300 }}>
+      <Paper style={{ height: 563, padding: 20 }}>
         <Typography variant="display1">{title}</Typography>
         <Typography variant="subheading" style={{ marginTop: 20 }}>
           {description} <br />
@@ -127,7 +139,11 @@ export default ({
       </Paper>
     </Grid>
 
-    <Grid item xs={4}>
+    <Grid
+      item
+      sm
+      style={{ marginTop: -20, padding: 20, height: 300, overflowY: "auto" }}
+    >
       <Paper>
         {/* {atheltics.map(([group, atheltics]) =>
             !category || category === group ? (

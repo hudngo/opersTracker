@@ -4,6 +4,8 @@ import activmainImg from "./Components/Layouts/Images/activity_mainImg.png";
 import dancemainImg from "./Components/Layouts/Images/dance_mainImg.png";
 import gymmainImg from "./Components/Layouts/Images/gym_mainImg.png";
 import martialmainImg from "./Components/Layouts/Images/martial_mainImg.png";
+import basketmainImg from "./Components/Layouts/Images/basket_mainImg.png";
+import poolmainImg from "./Components/Layouts/Images/pool_mainImg.png";
 
 export const areasBuildings = [
   "open",
@@ -44,14 +46,14 @@ export const exercises = [
   },
   {
     id: "basketball-courts",
-    img: tennismainImg,
+    img: basketmainImg,
     title: "Basketball Courts",
     description: "Triceps exercise...",
     areasBuildings: "sports areas"
   },
   {
     id: "swimming-pool",
-    img: tennismainImg,
+    img: poolmainImg,
     title: "Swimming Pool",
     description: "Biceps exercise...",
     areasBuildings: "sports areas"

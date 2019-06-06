@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Grid, Paper, Typography, List, Button } from "material-ui";
 import { ListItem, ListItemText } from "material-ui/List";
 import mainImage from "../Layouts/Images/mainImg.png";
+import { typography } from "material-ui/styles";
 
 const styles = theme => ({
   Paper: {
@@ -56,6 +57,7 @@ export default ({
   onSelect,
   exercise: {
     id,
+    link,
     img = mainImage,
     title = "East Field House — Opers",
     // img = "https://uploads.codesandbox.io/uploads/user/21e62c85-25b9-4ac0-a30e-e3170524188d/wzSU-opersTracker_Logo.png",
@@ -135,6 +137,9 @@ export default ({
           >
             reserve room
           </Button>
+          <Button target="_blank" href={link}>
+            View Calender
+          </Button>
         </Typography>
       </Paper>
     </Grid>
@@ -166,11 +171,11 @@ export default ({
           )} */}
       </Paper>
     </Grid>
-    <Grid item xs={4}>
+    {/* <Grid item xs={4}>
       <Paper>this is working</Paper>
-    </Grid>
-    <Grid item xs={4}>
+    </Grid> */}
+    {/* <Grid item xs={4}>
       <Paper>this is working</Paper>
-    </Grid>
+    </Grid> */}
   </Grid>
 );

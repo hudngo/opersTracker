@@ -165,7 +165,7 @@ export default function SearchAppBar() {
           <Typography className={classes.title} variant="h6" noWrap>
             Material-UI
           </Typography> */}
-          <div style={{ padding: 20 }} />
+          <div style={{ padding: 20}} />
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />

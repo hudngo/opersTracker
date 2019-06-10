@@ -30,7 +30,8 @@ const styles = theme => ({
   banner: {
     padding: 60,
     marginTop: 20,
-    height: 400
+    height: 250,
+    overflowY: "auto"
   },
   Paper2: {
     padding: 0,
@@ -57,6 +58,7 @@ export default ({
   onSelect,
   exercise: {
     id,
+    population,
     link,
     img = mainImage,
     title = "East Field House — Opers",
@@ -69,11 +71,23 @@ export default ({
     {/* <Grid container> */}
     <Grid item xs={3}>
       <Paper style={styles.banner}>
+        {/* <div style={{
+  
+            height: 400,
+            overflowY: "auto"
+          }}> */}
         <div style={{ padding: 20 }}>
           <img src={img} alt="img" />
         </div>
+
         <Typography variant="display1" style={{ marginTop: -30, padding: 20 }}>
           {title}
+        </Typography>
+        <Typography
+          variant="subheading"
+          style={{ marginTop: -20, padding: 20, whiteSpace: "pre-line" }}
+        >
+          {population}
         </Typography>
         {/* <div style={{padding: 20}}>
           <img src={img} alt="img" />
@@ -81,7 +95,7 @@ export default ({
         <div>{exercises.img}</div> */}
         <Typography
           variant="subheading"
-          style={{ marginTop: -20, padding: 20 }}
+          style={{ marginTop: -20, padding: 20, whiteSpace: "pre-line" }}
         >
           {description}
         </Typography>
@@ -90,6 +104,7 @@ export default ({
         {/* </Grid>
       <Grid item sm> */}
         {/* <Paper style={{height: 600}}> */}
+        {/* </div> */}
         <Grid
           item
           sm
@@ -126,11 +141,19 @@ export default ({
       {/* </Grid> */}
     </Grid>
     <Grid item sm={9} style={{ height: 300 }}>
-      <Paper style={{ height: 563, padding: 20 }}>
-        <Typography variant="display1">{title}</Typography>
-        <Typography variant="subheading" style={{ marginTop: 20 }}>
-          {description} <br />
-          {hours} <br />
+      <Paper
+        boxShadow={0}
+        style={{ height: 563, padding: 20, backgroundColor: "#EFEFEF" }}
+      >
+        <Typography variant="title" style={{ whiteSpace: "pre-line" }}>
+          {title}
+        </Typography>
+        <Typography
+          variant="subheading"
+          style={{ marginTop: 20, whiteSpace: "pre-line" }}
+        >
+          {/* {description} <br />
+          {hours} <br /> */}
           <Button
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLScbvLtTiX53tSWpuVJhdyzwHbQuoX-J6n4Qiad2agzEZXUy_w/viewform"
@@ -139,6 +162,12 @@ export default ({
           </Button>
           <Button target="_blank" href={link}>
             View Calender
+          </Button>
+          <Button
+            target="_blank"
+            href="https://www.youtube.com/watch?v=U9446_aGlvE"
+          >
+            Live Feed
           </Button>
         </Typography>
       </Paper>

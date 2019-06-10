@@ -25,7 +25,7 @@ export const exercises = [
     description:
       "Square Foot: 1145 \n\n Room Capacity: Varies by Activity \n\n Includes: Hardwood Floors & Mirrors \n\n Activities: Pilates, Yoga, Dance, Meditation, Self-Defense, Massage & Acupressure",
     areasBuildings: "east gym",
-    population: "Count: 12"
+    population: "Current Count: 12"
   },
   {
     id: "dance-studio",
@@ -36,7 +36,7 @@ export const exercises = [
     description:
       "Square Foot: 3200 \n\n Room Capacity: 45 \n\n Includes: Hardwood Floors, Mirrors, Balance Bar and Piano",
     areasBuildings: "east gym",
-    population: "Count: 8"
+    population: "Current Count: 8"
   },
   {
     id: "gym-room",
@@ -47,7 +47,7 @@ export const exercises = [
     description:
       "Square Foot: 6185 \n\n Room Capacity: Varies by Activity\n\n Includes: Hardwood Floor, Court Lines, Adjustable Basketball Hoops, Volleyball Uprights, Volleyball Nets, Wall padding, Indoor Soccer Goals\n\n Activities: Basketball, Volleyball, Badminton, Futsal, Indoor Hockey and Fencing",
     areasBuildings: "east gym",
-    population: "Count: 23"
+    population: "Current Count: 23"
   },
   {
     id: "martialarts-room",
@@ -58,7 +58,7 @@ export const exercises = [
     description:
       "Square Foot: 1460 \n\n Room Capacity: Varies by Activity \n\nIncludes: Padded Floors, Mirrors, and Bench \n Activities: Yoga, Aikido, Tae Kwon Do, Brazilian Jiu-Jitsu, Seibukan JuJutsu, Quantum Jujitsu and Ninjustsu",
     areasBuildings: "east gym",
-    population: "Count: 11"
+    population: "Current Count: 11"
   },
   {
     id: "basketball-courts",
@@ -68,7 +68,7 @@ export const exercises = [
       "https://campusrec.ucsc.edu/Facility/GetSchedule?facilityId=ec7c38a4-d9f9-4927-921e-d8ea535d65e1",
     description: "4 courts",
     areasBuildings: "sports areas",
-    population: "Count: 18"
+    population: "Current Count: 18"
   },
   {
     id: "swimming-pool",
@@ -79,7 +79,7 @@ export const exercises = [
     description:
       "Long Course Lanes: 8 \n\n Short Course Lanes: 17 \n\n Capacity: 632 people for entire pool complex \n\n Includes: Lane lines, Bulk Head, Lifeguard Stands, Shade Tent, Lawn Area, Bleachers, Pool Covers, Colorado Timing System upon request, Diving Blocks, 1-M Diving and 3-M Diving Boards \n\n Activities: Swimming, Diving, Scuba, and Recreational Lap ",
     areasBuildings: "sports areas",
-    population: "Count: 24"
+    population: "Current Count: 24"
   },
   {
     id: "tennis-courts",
@@ -90,7 +90,7 @@ export const exercises = [
     description:
       "Court Dimensions: 6 Standard Courts, size 75' x 35' \n\n Capacity: 4 Players per court \n\n Includes: Tennis Court lines, Nets, Benches, Lights and Official Stands \n\n Activities: Tennis",
     areasBuildings: "sports areas",
-    population: "Count: 0"
+    population: "Current Count: 0"
   },
   {
     id: "front-desk",
@@ -100,7 +100,7 @@ export const exercises = [
       "https://campusrec.ucsc.edu/Facility/GetSchedule?facilityId=ec7c38a4-d9f9-4927-921e-d8ea535d65e1",
     description: "OPERS Front Desk",
     areasBuildings: "opers admin",
-    population: "Count: 2"
+    population: "Current Count: 2"
   },
   {
     id: "locker-room",
@@ -109,7 +109,7 @@ export const exercises = [
     link: "https://opers.ucsc.edu/facilities/equipment-locker.html",
     description: "OPERS Lockers",
     areasBuildings: "opers admin",
-    population: "Count: 6"
+    population: "Current Count: 6"
   },
   {
     id: "wellness-center",
@@ -120,7 +120,7 @@ export const exercises = [
     description:
       "6,500 square foot of workout space \n\n Olympic Weight Lifting Platforms \n\n Over 50 pieces of Cardio Equipment \n\n  Weight Racks \n\n 2 TRX Training Zones \n\n Excellent views of the Monterey Bay \n\n Built in 2000",
     areasBuildings: "wellness center",
-    population: "Count: 32"
+    population: "Current Count: 32"
   },
   {
     id: "multi-purpose-room",
@@ -131,7 +131,7 @@ export const exercises = [
     description:
       "Square Foot: 1920 \n\n Room Capacity: Varies by Activity \n\n Includes: Multipurpose Flooring, Mirrors, Kick Boxing Free Standing Bags, and Sliding Garage Door. \n\nActivities: Total Body Conditioning, Zumba, Cardio-Kickboxing, Dance, Capeoria, Express Workout, class room setting, presentations, and meetings.",
     areasBuildings: "multi-purpose room",
-    population: "Count: 12"
+    population: "Current Count: 12"
   }
 ];
 

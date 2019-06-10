@@ -1,0 +1,5 @@
+# README
+This is our github repo for the OPERS Tracker React app, 
+to set up the project you will need to download certain dependencies along with the React CLI. 
+
+So, in order to circumvent all of that heres a code sandbox link to our project that will allow you to see and use our site: [https://nifj6.codesandbox.io/](https://nifj6.codesandbox.io/)

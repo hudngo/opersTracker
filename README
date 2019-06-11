@@ -1,4 +1,18 @@
-# README
+
+Thank you for visiting our Repo for the CMPM 131 OPERS Tracker!
+How to install:
+1) clone repo to your computer
+2) Have node.js installed into your computer (https://nodejs.org/en/)
+3) Install the dependiences:
+        @material-ui/core 
+        @material-ui/icons
+        @babel/runtime (not necessary)
+        material-ui (https://material-ui.com)
+        react (https://reactjs.org)
+        react-dom
+4) To run the program use command line npm start
+
+
 This is our github repo for the OPERS Tracker React app, 
 to set up the project you will need to download certain dependencies along with the React CLI. 
 
